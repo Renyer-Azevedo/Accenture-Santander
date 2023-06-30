@@ -51,7 +51,7 @@ validator:
 
   folder:
     file:
-      separator: ${FOLDER_FILE_SEPARATOR:"|"}
+      separator: ${FOLDER_FILE_SEPARATOR:\|}
     path: ${FOLDER_FILE_PATH:./datafile}
 
   schedule:
