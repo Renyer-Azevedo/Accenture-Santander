@@ -1,0 +1,6 @@
+John Doe|30|M|johndoe3@email.com|123-456-7890|123 Main St|New York|NY|10001|
+Jane Smith|25|F|janesmith3@email.com||456 Elm St|Los Angeles|CA|90001|Designer
+Mark Johnson|40|M||555-123-4567|789 Oak Ave|Chicago|IL|60601|Manager
+Emily Davis|35|F|emilydavis3@email.com|111-222-3333|321 Pine St|San Francisco|CA||
+Alex Anderson|28|M|alexanderson3@email.com|444-555-6666|654 Birch Rd|Miami|FL|33101|Accountant
+Sarah Wilson|45|F|sarahwilson3@email.com|777-888-9999||Houston|TX|77001|Sales

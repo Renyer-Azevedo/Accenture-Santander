@@ -6,6 +6,14 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 
 ## Running the application in dev mode
 
+It is necessary to have docker installed.
+
+Run the santander-odin-compose.yml file:
+```shell script
+docker-compose -f santander-odin-compose up -d
+```
+
+
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev

@@ -1,0 +1,65 @@
+quarkus:
+
+  #APP
+  application:
+    name: odin-validator
+  http:
+    port: ${QUARKUS_HTTP_PORT:8080}
+
+  log:
+    level: "INFO"
+    console:
+      enable: true
+
+  #banco de dados
+  datasource:
+    db-kind: ${DATASOURCE_DB_KIND:postgresql}
+    username: ${DATASOURCE_USER:admin}
+    password: ${DATASOURCE_PASS:admin@dev}
+    jdbc:
+      url: ${DATASOURCE_URL:jdbc:postgresql://localhost:5432/odin}
+
+  hibernate-orm:
+    database:
+      generation: ${DATASOURCE_GENERATION:drop-and-create}
+    log:
+      sql: true
+
+  #redis
+  redis:
+    hosts: ${REDIS_HOST:localhost:redis://localhost:6379}
+  cache:
+    redis:
+      ttl: ${REDIS_TTL:localhost:2m}
+
+#Kafka Dev
+'%dev':
+  kafka:
+    bootstrap:
+      servers: ${KAFKA_SERVER:localhost:29092}
+    consumer:
+      failure-strategy: ignore
+
+#kafka Prod
+#'%prod':
+#  kafka:
+#    bootstrap:
+#      servers: ${KAFKA_SERVER}
+
+#utilizado no programa
+validator:
+
+  folder:
+    file:
+      separator: ${FOLDER_FILE_SEPARATOR:"|"}
+    path: ${FOLDER_FILE_PATH:./datafile}
+
+  schedule:
+    every: ${SCHEDULE_EVERY:10m}
+    identity: ${SCHEDULE_IDENTITY:task-job-read-file}
+    delay: ${SCHEDULE_DELAY:1m}
+
+  kafka:
+    topic:
+      success: ${KAFKA_TOPIC_SUCCESS:topic-odin-read-success}
+      error: ${KAFKA_TOPIC_ERROR:topic-odin-read-error}

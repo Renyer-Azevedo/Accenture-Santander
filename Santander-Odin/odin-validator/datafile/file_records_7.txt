@@ -1,0 +1,6 @@
+John Doe|30|M|johndoe@email.com|123-456-7890|123 Main St|New York|NY|10001|Developer
+Jane Smith|25|F|janesmith@email.com|987-654-3210|456 Elm St|Los Angeles|CA|90001|Designer
+|40|M|markjohnson@email.com|555-123-4567|789 Oak Ave|Chicago|IL|60601|Manager
+|35|F|emilydavis@email.com|111-222-3333|321 Pine St|San Francisco|CA||
+Alex Anderson|28|M||444-555-6666|654 Birch Rd|Miami|FL|33101|Accountant
+|45|F||777-888-9999|987 Cedar Ln|Houston|TX|77001|Sales
